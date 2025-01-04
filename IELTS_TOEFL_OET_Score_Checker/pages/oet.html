@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IELTS TOEFL OET Score Calculator - App</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>IELTS/TOEFL/OET Score Calculator</h1>
+      </header>
+
+      <div class="app">
+        <nav>
+          <ul>
+            <li><a href="../index.html">IELTS</a></li>
+            <li><a href="./toefl.html">TOEFL</a></li>
+            <li><a href="./oet.html">OET</a></li>
+          </ul>
+        </nav>
+
+        <div class="note">
+          <p>
+            Enter the scores between 0 to 500. Please ensure correct data is
+            submitted to get correct scores.
+          </p>
+        </div>
+
+        <div class="form-box">
+          <form action="" method="">
+            <div class="sep flex">
+              <label for="listening">Listening</label>
+              <input
+                type="number"
+                id="listening"
+                min="0"
+                max="500"
+                placeholder="SCORE(0-500)"
+              />
+            </div>
+            <div class="sep flex">
+              <label for="speaking">Speaking</label>
+              <input
+                type="number"
+                id="speaking"
+                min="0"
+                max="500"
+                placeholder="SCORE(0-500)"
+              />
+            </div>
+            <div class="sep flex">
+              <label for="reading">Reading</label>
+              <input
+                type="number"
+                id="reading"
+                min="0"
+                max="500"
+                placeholder="SCORE(0-500)"
+              />
+            </div>
+            <div class="sep flex">
+              <label for="writing">Writing</label>
+              <input
+                type="number"
+                id="writing"
+                min="0"
+                max="500"
+                placeholder="SCORE(0-500)"
+              />
+            </div>
+            <div class="result" id="result"></div>
+            <div class="btn-box">
+              <button class="btn sb" onclick="calculateOET(event)">
+                submit
+              </button>
+              <button class="btn rs" onclick="reload()">reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../scripts/oet.js"></script>
+  </body>
+</html>
